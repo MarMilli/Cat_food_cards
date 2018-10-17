@@ -2,37 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a19ab419-8ee0-4ccd-a701-5a68c853662c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LandingPageResume.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/313317.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/Envato.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/Icon-Basket.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/Icon-Laptop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/Icon-Locked.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/Map_Image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/MarMilli.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/Microlancer_copy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/Tuts+.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/WordPress.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/ab1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/ab2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/ab3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/ab4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/background1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/background16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/background4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/background6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/background8.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/chris-coyier.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/ciUOBCHOAtc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/css_sprites_icon_back_next.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/port1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/port2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/port3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/port4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/port5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/port6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/cat.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/cat.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/main.sass" afterDir="false" />
     </list>
@@ -93,20 +71,22 @@
     <session id="186683101">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.52" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="6" />
-          <entry key="sass" value="65" />
+          <entry key="html" value="478" />
+          <entry key="sass" value="552" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="6" />
-          <entry key="Sass" value="65" />
+          <entry key="HTML" value="478" />
+          <entry key="Sass" value="552" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open" />
@@ -122,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+            <state relative-caret-position="100">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -131,8 +111,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="525">
+              <caret line="216" selection-start-line="216" selection-end-line="216" />
             </state>
           </provider>
         </entry>
@@ -193,8 +173,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="256" />
-    <option name="y" value="140" />
+    <option name="x" value="-1532" />
+    <option name="y" value="69" />
     <option name="width" value="1458" />
     <option name="height" value="918" />
   </component>
@@ -221,8 +201,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -256,7 +236,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539685172660" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539685480290" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -287,18 +267,18 @@
       <workItem from="1538362953699" duration="716000" />
       <workItem from="1538364308691" duration="97682000" />
       <workItem from="1539584603562" duration="352000" />
-      <workItem from="1539680094483" duration="3932000" />
+      <workItem from="1539680094483" duration="4097000" />
+      <workItem from="1539742816415" duration="24633000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102682000" />
+    <option name="totallyTimeSpent" value="127480000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1449" y="-9" width="1458" height="918" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.119226635" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16280752" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -366,20 +346,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/html/components/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/html/components/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/html/components/header.html" />
+    <entry file="file://$PROJECT_DIR$/app/html/components/footer.html" />
     <entry file="file://$PROJECT_DIR$/app/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -389,15 +357,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        <state relative-caret-position="100">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="525">
+          <caret line="216" selection-start-line="216" selection-end-line="216" />
         </state>
       </provider>
     </entry>

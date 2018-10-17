@@ -1,55 +1,225 @@
+@font-face
+  font-family: 'TrebuchetMS'
+  src: url('../fonts/TrebuchetMS.woff') format('woff'), url('../fonts/TrebuchetMS.woff2') format('woff2')
+  font-weight: normal
+  font-style: normal
 *
-	box-sizing: border-box
+  box-sizing: border-box
 
 html
-	padding: 0
-	margin: 0
-	font-size: 10px
-	line-height: 1.375
-body
-	margin: 0
-	background: url(../img/Pattern.png)
+  padding: 0
+  margin: 0
+  font-size: 10px
+  line-height: 1.15
+  word-wrap: break-word
+  font-family: 'TrebuchetMS', sans-serif
 
 a, a:visited
-	text-decoration: none
-	color: #000000
-p
-	margin: 0 0
-	padding: 0
-	text-align: justify
+  text-decoration: none
+  color: #000000
 
+p
+  margin: 0 0
+  padding: 0
+
+ul
+  margin: 0.8em 0
+  overflow: hidden
+  padding: 0
+
+ul li
+  list-style-type: none
+  position: relative
+  padding: 0
+  overflow: hidden
 
 h1
-	color: #ffffff
-	font-family: 'Montserrat', sans-serif
-	text-shadow: 0 1px 0 #000000
-	//font-family: "Exo 2.0- Thin";
-	font-size: 3.6rem
-	font-weight: 400
-	text-align: center
+  color: #ffffff
+  text-shadow: 0 1px 0 #000000
+  font-family: 'Exo 2', sans-serif
+  font-size: 3.6rem
+  font-weight: 200
+  text-align: center
+  margin-bottom: 0
+h2
+  font-size: 4.8rem
 
+.main
+  margin: 0
+  background: url(../img/Pattern.png)
 
-.content
-	width: 100%
+.main::before
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%)
+  content: ""
+  display: block
+  height: 100%
+  left: 0
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: -1
+
+.container
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.container__middle
+  max-width: 1200px
+  width: 95%
+  margin: 0 auto
+  padding: 30px 0
 
 .box
-	display: flex
-	flex-flow: row wrap
-	justify-content: space-around
-	align-items: stretch
-	width: 100%
-	margin: 40px 0 40px 0
-
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-around
+  align-items: stretch
+  width: 100%
+  margin: 40px 0 40px 0
 
 .block
-	text-align: center
-	max-width: 320px
-	width: 30%
-	height: 480px
-	background: #FFFFFF
-	//clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%)
+  max-width: 320px
+  width: 90%
+  margin-bottom: 20px
+
+.blockCart
+  cursor: pointer
+  position: relative
+
+.block__header
+  display: flex
+  height: 45px
+  position: relative
+
+.block__triangle
+  //background: #FFFFFF
+  width: 44px
+  background-image: linear-gradient(to top left, white 44%, #1698d9 46%, #1698d9 51%, rgba(1, 205, 202, 0) 50%)
+  //border: 50px solid transparent
+  //border-right-color: #FFFFFF
+  //border-left: 0
+  //border-bottom: 0
+
+//.block__triangle:before
+//  content: ''
+//  width: 40px
+//  display: block
+//  position: absolute
+//  left: -24px
+//  border-top: 4px solid #1698d9
+//  transform: rotate(-45deg)
 
 
+
+.block__rect
+  flex-grow: 1
+  padding: 15px 0 0 8px
+  border: 4px solid #1698d9
+  border-bottom: none
+  border-left: none
+  border-radius: 0 12px 0 0
+  background: #fff
+
+.block__subtitle
+  font-weight: 400
+  font-size: 1.6rem
+  color: #666666
+
+.block__main
+  position: relative
+  overflow: hidden
+  width: 100%
+  height: 437px
+  margin-bottom: 15px
+  box-sizing: border-box
+  padding: 0 46px 25px
+  border: 4px solid #1698d9
+  border-top: none
+  border-radius: 0 0 10px 10px
+  background: #fff
+  text-align: left
+
+.block__main_header
+  margin: 0 0 15px
+
+.block__main_header .subsidiary
+  font-size: 24px
+  display: block
+  color: #000000
+
+.block__img
+  position: absolute
+  bottom: -95px
+  left: -25px
+  width: 360px
+
+.block__main .block__subtitle
+  font-size: 1.4rem
+
+.round
+  position: absolute
+  bottom: 30px
+  right: 15px
+  width: 81px
+  height: 81px
+  border-radius: 50%
+  background: #1698d9
+  color: #fff
+  text-align: center
+  display: flex
+  justify-content: center
+  align-items: center
+
+.mass
+  position: relative
+.value
+  font-size: 42px
+.unit
+  font-size: 21px
+  line-height: 0.5
+
+.blockCart:hover .round
+  background: #2ea9e6
+.block__footer
+  text-shadow: 0 1px 0 #000000
+  color: #ffffff
+  font-size: 13px
+  font-weight: 400
+  line-height: 16px
+  text-align: center
+.basketAdd
+  color: #1698d9
+
+.basketAdd__link
+  color: #1698d9
+  border-bottom: 1px dashed currentColor
+
+.basketAdd__link:hover
+  color: #4ab1e5
+  cursor: pointer
+
+  ///* Text style for "купи" */
+  //
+  //font-family: "Trebuchet MS";
+  //font-weight: 700;
+.choose .block__main, .choose .block__rect
+  border-color: #d91667
+.choose .round
+  background: #d91667
+.choose .block__triangle
+  background-image: linear-gradient(to top left, white 44%, #d91667 46%, #d91667 51%, rgba(1, 205, 202, 0) 50%)
+.choose:hover .round
+  background: #d91667
+.notActive
+  filter: grayscale(100%)
+
+
+
+@media all and (orientation: landscape) and (max-height: 360px)
+  h1
+    font-size: 3.0rem
 
 
 
