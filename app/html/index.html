@@ -11,7 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Exo+2:200,400&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
           integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
+
 
 </head>
 <body class="main">
@@ -19,8 +21,8 @@
         <div class="container__middle">
         <h1>Ты сегодня покормил кота?</h1>
         <div class="box">
-            <div class="block choose">
-                <div class="blockCart ">
+            <div class="block">
+                <div class="blockCart">
                     <div class="block__header">
                         <div class="block__triangle"></div>
                         <div class="block__rect">
@@ -42,8 +44,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="block__footer">Чего сидишь? Порадуй котэ,
-                    <span class="basketAdd"><a class="basketAdd__link">купи</a>.</span>
+                <div class="block__footer">
+                    <div class="default">Чего сидишь? Порадуй котэ,
+                    <span class="basketAdd"><button class="basketAdd__link"><span>купи</span>.</button></span>
+                    </div>
+                    <div class="selected">Печень утки разварная с артишоками.
+                    </div>
+                    <div class="disabled">Печалька, с курой закончился.
+                    </div>
                 </div>
             </div>
             <div class="block">
@@ -69,12 +77,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="block__footer">Чего сидишь? Порадуй котэ,
-                    <span class="basketAdd"><a class="basketAdd__link">купи</a>.</span>
+                <div class="block__footer">
+                    <div class="default">Чего сидишь? Порадуй котэ,
+                        <span class="basketAdd"><button class="basketAdd__link"><span>купи</span>.</button></span>
+                    </div>
+                    <div class="selected">Головы щучьи с чесноком да свежайшая сёмгушка.
+                    </div>
+                    <div class="disabled">Печалька, с курой закончился.
+                    </div>
                 </div>
             </div>
-            <div class="block">
-                <div class="blockCart notActive">
+            <div class="block notActive">
+                <div class="blockCart">
                     <div class="block__header">
                         <div class="block__triangle"></div>
                         <div class="block__rect">
@@ -96,8 +110,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="block__footer">Чего сидишь? Порадуй котэ,
-                    <span class="basketAdd"><a class="basketAdd__link">купи</a>.</span>
+                <div class="block__footer">
+                    <div class="default">Чего сидишь? Порадуй котэ,
+                        <span class="basketAdd"><button class="basketAdd__link"><span>купи</span>.</button></span>
+                    </div>
+                    <div class="selected">Филе из цыплят с трюфелями в бульоне.
+                    </div>
+                    <div class="disabled">Печалька, с курой закончился.
+                    </div>
                 </div>
             </div>
         </div>

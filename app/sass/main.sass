@@ -3,6 +3,7 @@
   src: url('../fonts/TrebuchetMS.woff') format('woff'), url('../fonts/TrebuchetMS.woff2') format('woff2')
   font-weight: normal
   font-style: normal
+
 *
   box-sizing: border-box
 
@@ -40,7 +41,8 @@ h1
   font-size: 3.6rem
   font-weight: 200
   text-align: center
-  margin-bottom: 0
+  margin-bottom: 45px
+
 h2
   font-size: 4.8rem
 
@@ -60,24 +62,20 @@ h2
   z-index: -1
 
 .container
-  width: 100%
   display: flex
   justify-content: center
   align-items: center
+  height: 100vh
 
 .container__middle
   max-width: 1200px
-  width: 95%
-  margin: 0 auto
-  padding: 30px 0
+  width: 1200px
 
 .box
   display: flex
   flex-flow: row wrap
   justify-content: space-around
-  align-items: stretch
   width: 100%
-  margin: 40px 0 40px 0
 
 .block
   max-width: 320px
@@ -94,24 +92,8 @@ h2
   position: relative
 
 .block__triangle
-  //background: #FFFFFF
   width: 44px
   background-image: linear-gradient(to top left, white 44%, #1698d9 46%, #1698d9 51%, rgba(1, 205, 202, 0) 50%)
-  //border: 50px solid transparent
-  //border-right-color: #FFFFFF
-  //border-left: 0
-  //border-bottom: 0
-
-//.block__triangle:before
-//  content: ''
-//  width: 40px
-//  display: block
-//  position: absolute
-//  left: -24px
-//  border-top: 4px solid #1698d9
-//  transform: rotate(-45deg)
-
-
 
 .block__rect
   flex-grow: 1
@@ -174,14 +156,17 @@ h2
 
 .mass
   position: relative
+
 .value
   font-size: 42px
+
 .unit
   font-size: 21px
   line-height: 0.5
 
 .blockCart:hover .round
   background: #2ea9e6
+
 .block__footer
   text-shadow: 0 1px 0 #000000
   color: #ffffff
@@ -189,33 +174,87 @@ h2
   font-weight: 400
   line-height: 16px
   text-align: center
+
+.block__footer .selected
+  display: none
+
+.block__footer .disabled
+  display: none
+
+.choose .block__footer .selected
+  display: block
+
+.choose .block__footer .default
+  display: none
+
+.notActive .block__footer .disabled
+  display: block
+  color: #ffff66
+
+.notActive .block__footer .selected
+  display: none
+
+.notActive .block__footer .default
+  display: none
+
+
 .basketAdd
   color: #1698d9
 
 .basketAdd__link
   color: #1698d9
+  border: 0
+  background: transparent
+
+.basketAdd__link span
   border-bottom: 1px dashed currentColor
 
 .basketAdd__link:hover
   color: #4ab1e5
   cursor: pointer
 
-  ///* Text style for "купи" */
-  //
-  //font-family: "Trebuchet MS";
-  //font-weight: 700;
 .choose .block__main, .choose .block__rect
   border-color: #d91667
+
 .choose .round
   background: #d91667
+
 .choose .block__triangle
   background-image: linear-gradient(to top left, white 44%, #d91667 46%, #d91667 51%, rgba(1, 205, 202, 0) 50%)
+
 .choose:hover .round
   background: #d91667
-.notActive
-  filter: grayscale(100%)
 
+.notActive .block__main::before
+  background: rgba(255, 255, 255, 0.5)
+  content: ""
+  display: block
+  height: 100%
+  left: 0
+  position: absolute
+  top: 0
+  width: 100%
+  z-index: 1
+  cursor: default
 
+.notActive .block__main, .notActive .block__rect, .notActive .subsidiary
+  border-color: #b3b3b3
+  color: #b3b3b3
+
+.notActive .block__rect .block__subtitle
+  color: rgba(179, 179, 179, 0.5)
+
+.notActive .block__subtitle
+  color: #b3b3b3
+
+.notActive .round
+  background-color: #858585
+
+.notActive .blockCart:hover .round
+  background: #858585
+
+.notActive .block__triangle
+  background-image: linear-gradient(to top left, white 44%, #b3b3b3 46%, #b3b3b3 51%, rgba(1, 205, 202, 0) 50%)
 
 @media all and (orientation: landscape) and (max-height: 360px)
   h1
