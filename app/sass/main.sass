@@ -3,9 +3,19 @@
   src: url('../fonts/TrebuchetMS.woff') format('woff'), url('../fonts/TrebuchetMS.woff2') format('woff2')
   font-weight: normal
   font-style: normal
-
 *
   box-sizing: border-box
+
+//два варианта цвета блоков
+$bl_c: #1698d9
+$bl_c_s: #d91667
+
+//часто используемые цвета
+$bl_tr: rgba(0, 0, 0, 0.5)
+$w_tr: rgba(255, 255, 255, 0.5)
+$tr: rgba(1, 205, 202, 0)
+$b: #000000
+$w: #ffffff
 
 html
   padding: 0
@@ -17,31 +27,29 @@ html
 
 a, a:visited
   text-decoration: none
-  color: #000000
+  color: $b
 
 p
   margin: 0 0
   padding: 0
 
 ul
-  margin: 0.8em 0
   overflow: hidden
   padding: 0
-
-ul li
-  list-style-type: none
-  position: relative
-  padding: 0
-  overflow: hidden
+  li
+    list-style-type: none
+    position: relative
+    padding: 0
+    overflow: hidden
 
 h1
-  color: #ffffff
+  color: $w
   text-shadow: 0 1px 0 #000000
   font-family: 'Exo 2', sans-serif
   font-size: 3.6rem
   font-weight: 200
   text-align: center
-  margin-bottom: 45px
+  margin: 0 5px 45px 5px
 
 h2
   font-size: 4.8rem
@@ -49,17 +57,16 @@ h2
 .main
   margin: 0
   background: url(../img/Pattern.png)
-
-.main::before
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%)
-  content: ""
-  display: block
-  height: 100%
-  left: 0
-  position: fixed
-  top: 0
-  width: 100%
-  z-index: -1
+  &::before
+    background-image: linear-gradient(to bottom, $bl_tr 0%, $tr 50%, $bl_tr 100%)
+    content: ""
+    display: block
+    height: 100%
+    left: 0
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: -1
 
 .container
   display: flex
@@ -80,7 +87,7 @@ h2
 .block
   max-width: 320px
   width: 90%
-  margin-bottom: 20px
+  margin: 0 10px 20px
 
 .blockCart
   cursor: pointer
@@ -93,12 +100,12 @@ h2
 
 .block__triangle
   width: 44px
-  background-image: linear-gradient(to top left, white 44%, #1698d9 46%, #1698d9 51%, rgba(1, 205, 202, 0) 50%)
+  background-image: linear-gradient(to top left, white 44%, $bl_c 46%, $bl_c 51%, $tr 50%)
 
 .block__rect
   flex-grow: 1
   padding: 15px 0 0 8px
-  border: 4px solid #1698d9
+  border: 4px solid $bl_c
   border-bottom: none
   border-left: none
   border-radius: 0 12px 0 0
@@ -117,28 +124,26 @@ h2
   margin-bottom: 15px
   box-sizing: border-box
   padding: 0 46px 25px
-  border: 4px solid #1698d9
+  border: 4px solid $bl_c
   border-top: none
   border-radius: 0 0 10px 10px
-  background: #fff
+  background: $w
   text-align: left
+  .block__subtitle
+    font-size: 1.4rem
 
 .block__main_header
   margin: 0 0 15px
-
-.block__main_header .subsidiary
-  font-size: 24px
-  display: block
-  color: #000000
+  .subsidiary
+    font-size: 24px
+    display: block
+    color: $b
 
 .block__img
   position: absolute
   bottom: -95px
   left: -25px
   width: 360px
-
-.block__main .block__subtitle
-  font-size: 1.4rem
 
 .round
   position: absolute
@@ -147,7 +152,7 @@ h2
   width: 81px
   height: 81px
   border-radius: 50%
-  background: #1698d9
+  background: $bl_c
   color: #fff
   text-align: center
   display: flex
@@ -168,65 +173,57 @@ h2
   background: #2ea9e6
 
 .block__footer
-  text-shadow: 0 1px 0 #000000
-  color: #ffffff
+  text-shadow: 0 1px 0 $b
+  color: $w
   font-size: 13px
   font-weight: 400
   line-height: 16px
   text-align: center
+  .selected
+    display: none
+  .disabled
+    display: none
 
-.block__footer .selected
-  display: none
+.choose .block__footer
+  .selected
+    display: block
+  .default
+    display: none
 
-.block__footer .disabled
-  display: none
-
-.choose .block__footer .selected
-  display: block
-
-.choose .block__footer .default
-  display: none
-
-.notActive .block__footer .disabled
-  display: block
-  color: #ffff66
-
-.notActive .block__footer .selected
-  display: none
-
-.notActive .block__footer .default
-  display: none
-
+.notActive .block__footer
+  .disabled
+    display: block
+    color: #ffff66
+  .selected
+    display: none
+  .default
+    display: none
 
 .basketAdd
-  color: #1698d9
+  color: $bl_c
 
 .basketAdd__link
-  color: #1698d9
+  color: $bl_c
   border: 0
   background: transparent
-
-.basketAdd__link span
-  border-bottom: 1px dashed currentColor
-
-.basketAdd__link:hover
-  color: #4ab1e5
-  cursor: pointer
+  .link
+    border-bottom: 1px dashed currentColor
+  &:hover
+    color: #4ab1e5
+    cursor: pointer
 
 .choose .block__main, .choose .block__rect
-  border-color: #d91667
+  border-color: $bl_c_s
 
-.choose .round
-  background: #d91667
+.choose .round, .choose:hover .round
+  background: $bl_c_s
 
 .choose .block__triangle
-  background-image: linear-gradient(to top left, white 44%, #d91667 46%, #d91667 51%, rgba(1, 205, 202, 0) 50%)
+  background-image: linear-gradient(to top left, $w 44%, $bl_c_s 46%, $bl_c_s 51%, $tr 50%)
 
-.choose:hover .round
-  background: #d91667
 
 .notActive .block__main::before
-  background: rgba(255, 255, 255, 0.5)
+  background: $w_tr
   content: ""
   display: block
   height: 100%
@@ -247,18 +244,27 @@ h2
 .notActive .block__subtitle
   color: #b3b3b3
 
-.notActive .round
-  background-color: #858585
+.notActive
+  .round
+    background-color: #858585
+  .blockCart:hover .round
+    background: #858585
+  .block__triangle
+    background-image: linear-gradient(to top left, $w 44%, #b3b3b3 46%, #b3b3b3 51%, rgba(1, 205, 202, 0) 50%)
 
-.notActive .blockCart:hover .round
-  background: #858585
+.question
+  color: #e62e7a
 
-.notActive .block__triangle
-  background-image: linear-gradient(to top left, white 44%, #b3b3b3 46%, #b3b3b3 51%, rgba(1, 205, 202, 0) 50%)
-
-@media all and (orientation: landscape) and (max-height: 360px)
+@media all and (max-width: 1024px)
+  .container
+    height: 100%
   h1
-    font-size: 3.0rem
+    margin: 20px 5px 45px 5px
+
+@media all and (max-width: 360px)
+  html
+    font-size: 9px
+
 
 
 

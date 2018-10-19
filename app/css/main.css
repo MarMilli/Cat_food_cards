@@ -25,15 +25,13 @@ p {
   padding: 0; }
 
 ul {
-  margin: 0.8em 0;
   overflow: hidden;
   padding: 0; }
-
-ul li {
-  list-style-type: none;
-  position: relative;
-  padding: 0;
-  overflow: hidden; }
+  ul li {
+    list-style-type: none;
+    position: relative;
+    padding: 0;
+    overflow: hidden; }
 
 h1 {
   color: #ffffff;
@@ -42,7 +40,7 @@ h1 {
   font-size: 3.6rem;
   font-weight: 200;
   text-align: center;
-  margin-bottom: 45px; }
+  margin: 0 5px 45px 5px; }
 
 h2 {
   font-size: 4.8rem; }
@@ -50,19 +48,18 @@ h2 {
 .main {
   margin: 0;
   background: url(../img/Pattern.png); }
-
-.main::before {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), color-stop(50%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5)));
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
-  content: "";
-  display: block;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: -1; }
+  .main::before {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), color-stop(50%, rgba(1, 205, 202, 0)), to(rgba(0, 0, 0, 0.5)));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(1, 205, 202, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(1, 205, 202, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1; }
 
 .container {
   display: -webkit-box;
@@ -95,7 +92,7 @@ h2 {
 .block {
   max-width: 320px;
   width: 90%;
-  margin-bottom: 20px; }
+  margin: 0 10px 20px; }
 
 .blockCart {
   cursor: pointer;
@@ -142,25 +139,23 @@ h2 {
   border: 4px solid #1698d9;
   border-top: none;
   border-radius: 0 0 10px 10px;
-  background: #fff;
+  background: #ffffff;
   text-align: left; }
+  .block__main .block__subtitle {
+    font-size: 1.4rem; }
 
 .block__main_header {
   margin: 0 0 15px; }
-
-.block__main_header .subsidiary {
-  font-size: 24px;
-  display: block;
-  color: #000000; }
+  .block__main_header .subsidiary {
+    font-size: 24px;
+    display: block;
+    color: #000000; }
 
 .block__img {
   position: absolute;
   bottom: -95px;
   left: -25px;
   width: 360px; }
-
-.block__main .block__subtitle {
-  font-size: 1.4rem; }
 
 .round {
   position: absolute;
@@ -202,12 +197,10 @@ h2 {
   font-weight: 400;
   line-height: 16px;
   text-align: center; }
-
-.block__footer .selected {
-  display: none; }
-
-.block__footer .disabled {
-  display: none; }
+  .block__footer .selected {
+    display: none; }
+  .block__footer .disabled {
+    display: none; }
 
 .choose .block__footer .selected {
   display: block; }
@@ -232,27 +225,22 @@ h2 {
   color: #1698d9;
   border: 0;
   background: transparent; }
-
-.basketAdd__link span {
-  border-bottom: 1px dashed currentColor; }
-
-.basketAdd__link:hover {
-  color: #4ab1e5;
-  cursor: pointer; }
+  .basketAdd__link .link {
+    border-bottom: 1px dashed currentColor; }
+  .basketAdd__link:hover {
+    color: #4ab1e5;
+    cursor: pointer; }
 
 .choose .block__main, .choose .block__rect {
   border-color: #d91667; }
 
-.choose .round {
+.choose .round, .choose:hover .round {
   background: #d91667; }
 
 .choose .block__triangle {
-  background-image: -webkit-gradient(linear, right bottom, left top, color-stop(44%, white), color-stop(46%, #d91667), color-stop(51%, #d91667), color-stop(50%, rgba(1, 205, 202, 0)));
-  background-image: -o-linear-gradient(bottom right, white 44%, #d91667 46%, #d91667 51%, rgba(1, 205, 202, 0) 50%);
-  background-image: linear-gradient(to top left, white 44%, #d91667 46%, #d91667 51%, rgba(1, 205, 202, 0) 50%); }
-
-.choose:hover .round {
-  background: #d91667; }
+  background-image: -webkit-gradient(linear, right bottom, left top, color-stop(44%, #ffffff), color-stop(46%, #d91667), color-stop(51%, #d91667), color-stop(50%, rgba(1, 205, 202, 0)));
+  background-image: -o-linear-gradient(bottom right, #ffffff 44%, #d91667 46%, #d91667 51%, rgba(1, 205, 202, 0) 50%);
+  background-image: linear-gradient(to top left, #ffffff 44%, #d91667 46%, #d91667 51%, rgba(1, 205, 202, 0) 50%); }
 
 .notActive .block__main::before {
   background: rgba(255, 255, 255, 0.5);
@@ -283,10 +271,19 @@ h2 {
   background: #858585; }
 
 .notActive .block__triangle {
-  background-image: -webkit-gradient(linear, right bottom, left top, color-stop(44%, white), color-stop(46%, #b3b3b3), color-stop(51%, #b3b3b3), color-stop(50%, rgba(1, 205, 202, 0)));
-  background-image: -o-linear-gradient(bottom right, white 44%, #b3b3b3 46%, #b3b3b3 51%, rgba(1, 205, 202, 0) 50%);
-  background-image: linear-gradient(to top left, white 44%, #b3b3b3 46%, #b3b3b3 51%, rgba(1, 205, 202, 0) 50%); }
+  background-image: -webkit-gradient(linear, right bottom, left top, color-stop(44%, #ffffff), color-stop(46%, #b3b3b3), color-stop(51%, #b3b3b3), color-stop(50%, rgba(1, 205, 202, 0)));
+  background-image: -o-linear-gradient(bottom right, #ffffff 44%, #b3b3b3 46%, #b3b3b3 51%, rgba(1, 205, 202, 0) 50%);
+  background-image: linear-gradient(to top left, #ffffff 44%, #b3b3b3 46%, #b3b3b3 51%, rgba(1, 205, 202, 0) 50%); }
 
-@media all and (orientation: landscape) and (max-height: 360px) {
+.question {
+  color: #e62e7a; }
+
+@media all and (max-width: 1024px) {
+  .container {
+    height: 100%; }
   h1 {
-    font-size: 3.0rem; } }
+    margin: 20px 5px 45px 5px; } }
+
+@media all and (max-width: 360px) {
+  html {
+    font-size: 9px; } }
