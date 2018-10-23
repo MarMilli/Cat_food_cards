@@ -242,6 +242,9 @@ h2 {
   background-image: -o-linear-gradient(bottom right, #ffffff 44%, #d91667 46%, #d91667 51%, rgba(1, 205, 202, 0) 50%);
   background-image: linear-gradient(to top left, #ffffff 44%, #d91667 46%, #d91667 51%, rgba(1, 205, 202, 0) 50%); }
 
+.notActive .blockCart {
+  cursor: not-allowed; }
+
 .notActive .block__main::before {
   background: rgba(255, 255, 255, 0.5);
   content: "";
@@ -251,8 +254,7 @@ h2 {
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 1;
-  cursor: default; }
+  z-index: 1; }
 
 .notActive .block__main, .notActive .block__rect, .notActive .subsidiary {
   border-color: #b3b3b3;

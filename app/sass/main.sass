@@ -199,6 +199,7 @@ h2
   .default
     display: none
 
+
 .basketAdd
   color: $bl_c
 
@@ -222,6 +223,9 @@ h2
   background-image: linear-gradient(to top left, $w 44%, $bl_c_s 46%, $bl_c_s 51%, $tr 50%)
 
 
+.notActive .blockCart
+  cursor: not-allowed
+
 .notActive .block__main::before
   background: $w_tr
   content: ""
@@ -232,7 +236,7 @@ h2
   top: 0
   width: 100%
   z-index: 1
-  cursor: default
+
 
 .notActive .block__main, .notActive .block__rect, .notActive .subsidiary
   border-color: #b3b3b3
